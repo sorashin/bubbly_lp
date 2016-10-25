@@ -1,0 +1,146 @@
+<!-- PRODUCT.HTML -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>BUBBLY/Product</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="sass/style.css">
+
+  <!-- javascripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+          menu: '#menu',
+          anchors: ['page1', 'page2', 'page3', 'page4'],
+          sectionsColor: ['#bfda00', '#fff', '#FFF', '#FFF'],
+          navigation: {
+            'position': 'right',
+            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
+          },
+          afterRender: function(){
+          //playing the video
+          $('video').get(0).play();
+        }
+      });
+      });
+    </script>
+    <script>
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide"
+        });
+      });
+    </script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body class="product_wrap">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
+    <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
+    <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+  </ul> -->
+  <div class="menu-wrap">
+    <nav class="menu">
+      <div class="icon-list">
+        <a href="#page2"><i class="fa fa-fw fa-star-o"></i><span>PRODUCTS</span></a>
+        <a href="#page3"><i class="fa fa-fw fa-bell-o"></i><span>APP</span></a>
+        <a href="#page4"><i class="fa fa-fw fa-bell-o"></i><span>SPONSORS</span></a>
+        <ul class="SNSButton u-cf" style="margin-top:10%">
+          <li><a class="icon_tw" href="https://twitter.com/bubbly_sxsw" target="_blank">twitter</a></li>
+          <li><a class="icon_fb" href="https://www.facebook.com/bubblysxsw/?view_public_for=329116697211965" target="_blank">facebook</a></li>
+        </ul>
+      </div>
+        </nav>
+        <button class="close-button" id="close-button"></button>
+  </div>
+  <button class="menu-button" id="open-button">Open Menu</button>
+  <div id="pagepiling" class="content-wrap">
+      <div class="section" id="section1">
+        <video autoplay loop muted id="myVideo">
+          <source src="img/videotagcolor.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <h1><img src="img/logo3.png" alt="BUBBLY"></h1>
+        </div>
+      </div>
+      <div class="section" id="section2">
+          <div class="intro">
+            <div class="container">
+              <div class="row">
+                <div class="four columns">
+                  <h1>PRODUCT</h1>
+                  <p>Bubbly is a tipping device for streeet Performers.</p>
+                </div>
+                <div class="eight columns">
+                  <!-- <img src="img/pd_img1.jpg" alt=""> -->
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="section" id="section3">
+        <div class="intro">
+          <div class="container">
+            <h1>Bubbly.jp</h1>
+            <p>We also provides web application which broadcasts live street performance from all over the world.</p>
+            <p><a href="#">Jump into Bubbly.jp</a></p>
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="img/app_img1.jpg" />
+                </li>
+                <li>
+                  <img src="img/app_img2.jpg" />
+                </li>
+                <li>
+                  <img src="img/app_img3.jpg" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <div class="intro">
+          <div class="container">
+            <h1>SPONSORS</h1>
+            <p>We are wating for your support!</p>
+            <p><a href="#">Invest</a></p>
+          </div>
+        </div>
+      </div>
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

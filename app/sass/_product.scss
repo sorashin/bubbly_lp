@@ -1,0 +1,205 @@
+// PRODUCT.SCSS
+
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:959px)";
+$large:  "only screen and (min-width:960px)";
+
+.product_wrap{
+	text-align: left;
+	/* Centered texts in each section
+		* --------------------------------------- */
+		.section{
+			text-align:center;
+			overflow: hidden;
+		}
+		.intro{
+			margin:5% 0%;
+		}
+
+		#myVideo{
+			position: absolute;
+			z-index: 4;
+			right: 0;
+			bottom: 0;
+			top:0;
+			right:0;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+	 		background-color: black; /* in case the video doesn't fit the whole page*/
+	  		// background: url("../img/movBg.png");
+	  		background-position: center center;
+	  		background-size: contain;
+	   		object-fit: cover; /*cover video background */
+		}
+
+		/* Layer with position absolute in order to have it over the video
+		* --------------------------------------- */
+		#section1 .layer{
+			position: absolute;
+			z-index: 5;
+			width: 100%;
+			left: 0;
+			top: 0;
+			height: 100%;
+			background: url("../img/dot.png");
+			h1{
+				width:80%;
+				text-align: center ;
+				display: block ;
+				margin-left: -40%;
+				@media screen and (min-width:640px){
+					width:40%;
+					margin-left: -20%; 
+				}
+			}
+		}
+
+		#section1{ 
+			color:#fff;
+			h1{
+				position: absolute;
+				top:40%;
+				// text-align: center;
+				left:50%;
+				margin-left:-193px;
+				margin-top:-44px;
+			}
+			p{
+				position: absolute;
+				top:60%;
+				left:50%;
+			}
+		}
+		#section2 {
+			// background-image: url("../img/pd_img1.jpg"); 
+			background: url(../img/pd_img1.jpg) center center / cover no-repeat fixed;
+			.row{
+				div:first-child{
+					padding:30px;
+					background-color:rgba(255,255,255,0.3);
+				}
+			}
+			h1{
+				
+			}
+		}
+		#section3{
+			.flexslider{
+				@media screen and (min-width:640px){
+					width:40%;
+					margin-right: auto ;
+					margin-left: auto ;
+				}
+			}
+
+			.movList{
+				a{
+					display: block;
+					height:300px;
+				}
+			}
+		}
+		#infoMenu li a{
+			color: #fff;
+		}
+		
+	img{
+		height:auto;
+		width:100%;
+	}
+	.youtube-container {
+	  position: relative;
+	  padding-bottom: 56.25%;
+	  padding-top: 30px;
+	  height: 0;
+	  overflow: hidden;
+	}
+	.youtube-container iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+	.arrow img{
+		width:80px;
+		height: auto;
+	}
+	.steps img{
+		width:60%;
+		height:auto;
+	}
+		.SNSButton{
+			position: relative ;
+			padding: 0.8em; 
+				li{
+					list-style: none;
+					text-indent: -9999px;
+					float: left;
+					&:last-child{
+						margin-left: 60px;  
+					}
+					a.icon_tw{
+						width: 30px;
+						height: 30px;
+						background: #b8b7ad url("../img/icon_twitter.png") no-repeat center;
+						-webkit-border-radius: 70px;
+						 border-radius: 70px;
+						color: #FFF;
+						padding: 15px 15px 15px;
+						display: block; 
+						text-align: center ;
+						font-weight: bold ;
+						font-size: 120%;
+						-webkit-transition: background-color 0.2s ease-in;
+						   -moz-transition: background-color 0.2s ease-in; 
+						   -ms-transition: background-color 0.2s ease-in; 
+						   -o-transition: background-color 0.2s ease-in; 
+						   transition: background-color 0.2s ease-in;
+						&:hover{
+							background: #91c9f3 url("../img/icon_twitter.png") no-repeat center;
+						}  
+					}
+					a.icon_fb{
+						width: 30px;
+						height: 30px;
+						background: #b8b7ad url("../img/icon_fb.png") no-repeat center;
+						-webkit-border-radius: 70px;
+						 border-radius: 70px;
+						color: #FFF;
+						padding: 15px 15px 15px;
+						display: block; 
+						text-align: center ;
+						font-weight: bold ;
+						font-size: 120%;
+						-webkit-transition: background-color 0.2s ease-in;
+						   -moz-transition: background-color 0.2s ease-in; 
+						   -ms-transition: background-color 0.2s ease-in; 
+						   -o-transition: background-color 0.2s ease-in; 
+						   transition: background-color 0.2s ease-in;
+						&:hover{
+							background: #91c9f3 url("../img/icon_fb.png") no-repeat center;
+						}  
+					}
+				}	
+			  
+		}
+		ul.sponsors{
+			li{	
+				width:60px;
+				height:auto;
+				list-style:none; 
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				img{
+					text-align: center ;
+				}
+			}
+		}
+		p.cr{
+			color:#999;
+		}
+
+}

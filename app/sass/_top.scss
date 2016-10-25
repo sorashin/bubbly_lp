@@ -1,0 +1,22 @@
+// TOP.HTML
+.top_wrap{
+	color:#fff;
+	background-color: #555;
+	header{
+	position: relative;
+	}
+	.ham-icon{
+		position:absolute;
+		left: 10px;
+		top: 7px;
+	}
+	.ham-icon i{
+		display:block;
+		width:23px;
+		height: 25px;
+		background-color: #555;
+		&:before{
+			content:" ";
+		}
+	}
+}
